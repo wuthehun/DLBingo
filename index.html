@@ -98,7 +98,7 @@
 
         async function fetchBingoData() {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/wuthehun/DLBingo/refs/heads/main/README.md');
+                const response = await fetch('https://raw.githubusercontent.com/wuthehun/DLBingo/refs/heads/main/items.txt');
                 if (!response.ok) throw new Error('Network response was not ok');
                 const text = await response.text();
                 return text.split('\n').filter(line => line.trim() !== '');
