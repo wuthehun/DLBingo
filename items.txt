@@ -61,7 +61,7 @@ Eat at a buffet
 batuu
 fantasy land
 Tomorrow land 
-frontierland
+frontier land
 New Orleans square 
 Toon Town
 Grizzly peak
@@ -69,12 +69,14 @@ Hollywood land
 Avengers campus 
 Cars land
 Pixar Pier 
-Sanfransokyo
+San Fransokyo
 Get a drink
 Get a food item 
 Get a snack
 Someone running
 ride photo
 Same clothes group
-Unofficial day
+Unofficial holiday
 Proposal
+Steamer
+Famous person
