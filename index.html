@@ -24,7 +24,7 @@
             grid-template-columns: repeat(5, 1fr);
             gap: 10px;
             max-width: 400px;
-            margin: auto;
+            margin: 2em;
         }
         .bingo-cell {
             width: 70px;
@@ -36,10 +36,11 @@
             border-radius: 10px;
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            font-size: .5em;
+            font-size: .75em;
             font-weight: bold;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
+	    text-align: center;
         }
         .bingo-cell:hover {
             transform: scale(1.05);
@@ -49,14 +50,14 @@
 			color: #fff;
         }
         .free-space {
-            background-color: #e0e0e0;
+            background-color: #747474;
             cursor: default;
         }
         #winnerMessage {
             text-align: center;
-            margin-top: 20px;
             font-size: 20px;
-            color: green;
+            color: red;
+	    font-weight: bold;
         }
         button {
             margin-top: 20px;
