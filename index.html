@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bingo Board</title>
+    <title>DISNEYLAND BINGO</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -17,7 +17,7 @@
         }
         h1 {
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .bingo-board {
             display: grid;
@@ -36,7 +36,7 @@
             border-radius: 10px;
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            font-size: 1em;
+            font-size: .5em;
             font-weight: bold;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
@@ -75,7 +75,7 @@
     </style>
 </head>
 <body>
-    <h1>Bingo Board</h1>
+    <h1>DISNEYLAND BINGO</h1>
     <div class="bingo-board" id="bingoBoard">
         <!-- Bingo cells will be generated here -->
     </div>
@@ -197,7 +197,7 @@
 
             for (const pattern of winningPatterns) {
                 if (pattern.every(index => cells[index].classList.contains('marked'))) {
-                    winnerMessage.textContent = 'Bingo! You have a winning pattern!';
+                    winnerMessage.textContent = 'Bingo! You win Disneyland bingo!';
                     return;
                 }
             }
