@@ -1,4 +1,4 @@
-{
+[
   { "text": "Child leash", "value": "" },
   { "text": "Ducks", "value": "" },
   { "text": "Leaf Mickey", "value": "" },
@@ -79,4 +79,4 @@
   { "text": "Same clothes group", "value": "" },
   { "text": "Unofficial day", "value": "" },
   { "text": "Proposal", "value": "" }
-}
+]
