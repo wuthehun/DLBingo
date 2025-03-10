@@ -1,4 +1,5 @@
-[
+{
+  "spaces": [
   { "text": "Child leash", "value": "" },
   { "text": "Ducks", "value": "" },
   { "text": "Leaf Mickey", "value": "" },
@@ -80,3 +81,4 @@
   { "text": "Unofficial day", "value": "" },
   { "text": "Proposal", "value": "" }
 ]
+}
