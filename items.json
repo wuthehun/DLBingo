@@ -105,6 +105,9 @@
     { "text": "Food Truck", "value": "Get food from a food truck"},
     { "text": "DTD Show", "value": "Watch a band in Downtown Disney"}, 
     { "text": "Walk Pier Loop", "value": "Take a lap around Pixar Pier"},
-    { "text": "Do Something New", "value": "Do something you have never done before"}
+    { "text": "Do Something New", "value": "Do something you have never done before"},
+    { "text": "See Sword Pulled", "value": "Watch someone else pull the sword from the stone"},
+    { "text": "Bayou Country", "value": "Visit Bayou Country"},
+    { "text": "Front Back Monorail", "value": "Ride in the front or back of a monorail"}
   ]
 }
