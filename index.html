@@ -120,7 +120,7 @@
 
         async function fetchBingoData() {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/wuthehun/DLBingo/refs/heads/main/items.json');
+                const response = await fetch('https://disneylandbingo.artwu.art/items.json');
                 if (!response.ok) throw new Error('Network response was not ok');
                 const jsonData = await response.json();
                 return jsonData.spaces;
