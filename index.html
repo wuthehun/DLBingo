@@ -159,13 +159,13 @@
                     }
                     if (state.marked) {
                         cell.classList.add('marked');
-						cell.addEventListener('click', () => {
-							cell.classList.toggle('marked');
-							saveBoardState();
-							checkWinner();
-						});
                     }
-
+                    cell.addEventListener('click', () => {
+                        cell.classList.toggle('marked');
+                        saveBoardState();
+                        checkWinner();
+                    });
+			
                     bingoBoard.appendChild(cell);
                     cells.push(cell);
                 });
@@ -193,8 +193,8 @@
                         saveBoardState();
                         checkWinner();
                     });
-					cell.addEventListener('dblclick', () => {
-						eventMessage.textContent = number.value;
+                    cell.addEventListener('dblclick', () => {
+                        eventMessage.textContent = number.value;
                     });
                 }
                 bingoBoard.appendChild(cell);
