@@ -139,7 +139,8 @@
 
         function saveBoardState() {
             const boardState = cells.map(cell => ({
-                value: cell.textContent,
+                text: cell.textContent,
+				value: cell.value,
                 marked: cell.classList.contains('marked')
             }));
             localStorage.setItem('bingoBoardState', JSON.stringify(boardState));
@@ -153,8 +154,9 @@
                 boardState.forEach((state, index) => {
                     const cell = document.createElement('div');
                     cell.classList.add('bingo-cell');
-                    cell.textContent = state.value;
-                    if (state.value === 'Free') {
+                    cell.textContent = state.text;
+					cell.value = state.value;
+                    if (state.text === 'Free') {
                         cell.classList.add('free-space', 'marked');
                     }
                     if (state.marked) {
@@ -165,7 +167,9 @@
                         saveBoardState();
                         checkWinner();
                     });
-			
+                    cell.addEventListener('dblclick', () => {
+                        eventMessage.textContent = state.value;
+                    });
                     bingoBoard.appendChild(cell);
                     cells.push(cell);
                 });
@@ -186,8 +190,10 @@
                 if (number === 'Free') {
                     cell.classList.add('free-space', 'marked');
                     cell.textContent = 'Free';
+					cell.value = 'Free';
                 } else {
                     cell.textContent = number.text;
+					cell.value = number.value;
                     cell.addEventListener('click', () => {
                         cell.classList.toggle('marked');
                         saveBoardState();
