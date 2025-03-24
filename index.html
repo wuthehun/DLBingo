@@ -136,21 +136,32 @@
                 [array[i], array[j]] = [array[j], array[i]];
             }
         }
-        
+
+        function sumUnicodeValues(str) {
+          let sum = 0;
+
+          for (let i = 0; i < str.length; i++) {
+            sum += str.charCodeAt(i);
+          }
+
+          return sum;
+        }
+
         function shuffleSeed(array, seed) {                // <-- ADDED ARGUMENT
           var m = array.length, t, i;
+          let numSeed = sumUnicodeValues(seed);
 
           // While there remain elements to shuffle…
           while (m) {
 
             // Pick a remaining element…
-            i = Math.floor(random(seed) * m--);        // <-- MODIFIED LINE
+            i = Math.floor(random(numSeed) * m--);        // <-- MODIFIED LINE
 
             // And swap it with the current element.
             t = array[m];
             array[m] = array[i];
             array[i] = t;
-            ++seed                                     // <-- ADDED LINE
+            ++numSeed                                     // <-- ADDED LINE
           }
 
           //return array;
